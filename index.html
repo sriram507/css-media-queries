@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Gallery</title>
+    <style>
+ 
+body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .gallery {
+            display: grid;
+            grid-gap: 10px;
+            padding: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* 2x2 Grid for screens 320px to 425px */
+        @media (min-width: 320px) and (max-width: 425px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* 3x3 Grid for screens 426px to 768px */
+        @media (min-width: 426px) and (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* 4x4 Grid for screens 769px to 1024px */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .gallery {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        /* General Pseudo-class Example */
+        .gallery img:hover {
+            opacity: 0.8;
+            transform: scale(1.05);
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="./ckr8g2uz216nolkns4qd9yecdym0_0bb5438e6acd6cfe46095d36d96ca99e.webp" alt="Image 1">
+        <img src="./Madhavi-Gaur-1568x941.png" alt="Image 2">
+        <img src="./mahindra-xuv400.webp" alt="Image 3">
+        <img src="./main2a-942x628.jpg" alt="Image 4">
+        <img src="./Portion-Himalayas-Jammu-and-Kashmir-India-state.webp" alt="Image 5">
+        <img src="./wonderla-amusement-water-park-hyderabad-tourism-entry-ticket-price.jpg" alt="Image 6">
+        <img src="./wonderla2.png" alt="Image 7">
+        <img src="./Sky_Wheel_k9epdj.avif" alt="Image 8">
+        <img src="./beimg0k45oll9l.jpeg" alt="Image 9">
+        
+    </div>
+
+</body>
+</html>
